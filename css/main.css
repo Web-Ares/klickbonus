@@ -54,7 +54,6 @@
     height: 130px;
     z-index: 3;
     padding-top: 16px;
-    margin-bottom: 20px;
 }
 .site__footer {
     z-index: 2;
@@ -252,6 +251,140 @@
     background-color: #1cacec;
 }
 /* ----------- /header__menu ----------- */
+
+/* ----------- promo-slide ----------- */
+.promo-slide{
+    height: 411px;
+    margin-bottom: 34px;
+}
+.promo-slide .carousel-inner > .item > img {
+    top: auto;
+    left: 50%;
+    margin-left: -11%;
+    bottom: 53px;
+    height: 167px;
+    min-width: 100px;
+}
+.promo-slide .carousel .item {
+    height: 411px;
+    background-color: #163849;
+}
+.promo-slide .item {
+    height: 411px;
+    background-color: #163849;
+}
+.promo-slide .carousel-caption {
+    right: 14%;
+    left: 22%;
+    bottom: auto;
+    text-align: left;
+    padding-top: 26px;
+}
+.promo-slide h1{
+    font-size: 24px;
+    font-weight: 100;
+}
+.promo-slide p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+}
+.promo-slide h1>span{
+    position: relative;
+    display: block;
+    height: 1px;
+    background: #26aed7;
+    margin: 25px auto 24px;
+}
+.promo-slide h1>span>span{
+    position: absolute;
+    display: block;
+    top: -9px;
+    left: -5px;
+    width: 28px;
+    height: 12px;
+    background: #163849;
+}
+.promo-slide h1>span>span:before,
+.promo-slide h1>span>span:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 4px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #26aed7;
+    border-radius: 50%;
+}
+.promo-slide h1>span>span:after{
+    top: 5px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+}
+.promo-slide .carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    background-color: #45606d;
+    border: none;
+}
+.promo-slide .carousel-indicators .active {
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    background-color: #8b9ca4;
+}
+.promo-slide .carousel-control{
+    top: 50%;
+    margin-top: -36px;
+    left: 15px;
+    width: 36px;
+    height: 70px;
+    background-color: #0f2733;
+    border-radius: 3px;
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+.promo-slide .carousel-control.right {
+    right:15px;
+    left: auto;
+}
+.promo-slide .glyphicon-chevron-right:before {
+    position: absolute;
+    content: "";
+    right: -13px;
+    width: 16px;
+    height: 30px;
+    background: url("../img/slider-promo-next.png")no-repeat center;
+    background-size: contain;
+}
+.promo-slide .glyphicon-chevron-left:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 16px;
+    height: 30px;
+    background: url("../img/slider-promo-prev.png") no-repeat center;
+    background-size: contain;
+}
+.promo-slide .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    margin-left: -10px;
+}
+.promo-slide .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+    top: 50%;
+    margin-top: -15px;
+}
+.promo-slide .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    right: 50%;
+    margin-right: 5px;
+}
+.promo-slide .carousel-control:hover{
+    opacity: .7;
+}
+/* ----------- /promo-slide ----------- */
+
 
 @media (min-width: 768px){
 
