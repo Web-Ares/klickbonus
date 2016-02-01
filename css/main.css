@@ -28,29 +28,21 @@
 }
 /* --------------- /placeholder --------------- */
 
-/* --------------- fonts --------------- */
-@font-face {
-    font-family: "Font Name";
-    src: url("../fonts/font.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-/* --------------- /fonts --------------- */
-
 /* --------------- site --------------- */
 .site {
-    min-height: 100%;
-    min-width: 1000px;
-    overflow: hidden;
     position: relative;
     z-index: 1;
+    min-height: 100%;
+    width: 100%;
+    min-width: 320px;
+    font-family: "Roboto", sans-serif;
+    color: #797979;
 }
 .site:after {
     content: '';
     display: block;
     clear: both;
     width: 100%;
-
     height: 100px;
 }
 .site__content {
@@ -59,11 +51,10 @@
 }
 .site__header {
     position: relative;
-
-    height: 100px;
-    background: red;
+    height: 130px;
     z-index: 3;
-
+    padding-top: 16px;
+    margin-bottom: 20px;
 }
 .site__footer {
     z-index: 2;
@@ -84,7 +75,246 @@
 /* --------------- logo --------------- */
 .logo {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 44px;
+    left: 13px;
+    z-index: 3;
+}
+.logo img{
+    width: 235px;
+    height: 33px;
 }
 /* --------------- /logo --------------- */
+.site__title{
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 23px;
+}
+.site__title>span{
+    position: relative;
+    display: block;
+    height: 1px;
+    background: #26aed7;
+    margin: 0 auto 22px;
+}
+.site__title>span>span{
+    position: absolute;
+    display: block;
+    top: -10px;
+    left: 50%;
+    margin-left: -14px;
+    width: 28px;
+    height: 12px;
+    background: #fff;
+}
+.site__title>span>span:before,
+.site__title>span>span:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 4px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #26aed7;
+    border-radius: 50%;
+}
+.site__title>span>span:after{
+    top: 5px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+}
+.capabilities__item{
+    display: inline-block;
+    vertical-align: top;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #797979;
+    padding: 5px 16px 0 42px;
+    margin-bottom: 31px;
+}
+.capabilities__item span{
+    display: block;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000;
+    margin-bottom: 13px;
+}
+.container{
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.site__header .feedback a {
+    color:#000;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+.site__header .feedback a.phone{
+    font-weight: 700;
+    margin-left: 13px;
+}
+.site__header .feedback a.email{
+    text-decoration: underline;
+}
+.site__header .feedback a:hover{
+    text-decoration: none;
+}
+/* ------------ header__menu ----------- */
+.navbar-collapse.in {
+    overflow-y: hidden;
+}
+.navbar .navbar-collapse {
+    background-color: #fff;
+    border-top: none;
+}
+.navbar-default .navbar-toggle {
+    margin: 3px 15px;
+    padding: 8px 4px;
+    border: none;
+    background-color: #1dafed;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-toggle .icon-bar {
+    width: 40px;
+    height: 3px;
+    border-radius: 5px;
+    margin-bottom: 11px;
+}
+.navbar-toggle .icon-bar:last-child{
+    margin-bottom: 0;
+}
+.navbar{
+    position: absolute;
+    top: 34px;
+    right: -2px;
+    width: 100%;
+    height: 47px;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+    text-align: center;
+    background: #fff;
+}
+.navbar .navbar-collapse{
+    margin: 0 auto;
+}
+.navbar-default .navbar-nav > li > a{
+    position: relative;
+    display: inline-block;
+    padding: 14px 9px 15px 0;
+    font-size: 16px;
+    color: #1cacec;
+    z-index: 9;
+    transition: opacity 0.3s ease 0s;
+    -moz-transition: opacity 0.3s ease 0s;
+    outline: none;
+    letter-spacing: -1px;
+}
+.navbar-default .navbar-nav > li > a.active:hover{
+    opacity: 1;
+}
+.navbar-default .navbar-nav > li > a:hover{
+    color:#1cacec;
+    opacity: 0.7
+}
+.navbar-default .navbar-nav > li > a:before{
+    position: absolute;
+    bottom: 4px;
+    content: "";
+    width: 100%;
+    height: 6px;
+    border-top: 1px solid #1cacec;
+    border-bottom: 1px solid #1cacec;
+    transition: opacity 0.3s ease 0s;
+    -moz-transition: opacity 0.3s ease 0s;
+    opacity: 0;
+    z-index: -1;
+
+}
+.navbar-default .navbar-nav > li > a:hover:before{
+    opacity: 1;
+}
+.navbar-default .navbar-nav > li > a.active:before{
+    opacity: 1;
+}
+.navbar-default .navbar-toggle:focus{
+    background-color: #1cacec;
+}
+.navbar-default .navbar-toggle:hover {
+    opacity: 0.7;
+    background-color: #1cacec;
+}
+/* ----------- /header__menu ----------- */
+
+@media (min-width: 768px){
+
+    .site__header {
+        position: relative;
+        height: 111px;
+        padding-top: 7px;
+    }
+    .site__title>span {
+        width: 396px;
+    }
+    .capabilities ul{
+        padding-left: 40px;
+    }
+    .navbar-default .navbar-nav > li{
+        margin-left: 68px;
+    }
+    .navbar-default .navbar-nav > li:first-child{
+        margin-left: 0;
+    }
+
+    /* ----------- logo ----------- */
+    .logo {
+        top: 0;
+        left: 10px;
+    }
+    .logo img {
+        width: 275px;
+        height: 42px;
+    }
+    /* ----------- /logo ----------- */
+
+    /* ----------- feedback ----------- */
+    .feedback{
+        float: right;
+        padding-top: 20px;
+    }
+    .feedback a.phone {
+        margin-left: 30px;
+        letter-spacing: 0;
+    }
+    /* ----------- /feedback ----------- */
+    .navbar {
+        top: 45px;
+    }
+}
+@media (min-width: 1024px){
+    .capabilities ul{
+        padding-left: 0;
+    }
+    .capabilities__item {
+    }
+    .navbar-nav {
+        float: right;
+    }
+    .navbar-default .navbar-nav > li {
+        margin-left: 48px;
+    }
+
+    /* ----------- logo ----------- */
+    .logo {
+        top: 40px;
+        left: 10px;
+    }
+    /* ----------- /logo ----------- */
+}
