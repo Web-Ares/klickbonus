@@ -1,10 +1,6 @@
 $(function(){
 
     $('.panel-title').click(function () {
-        $('.panel-title').removeClass("panel-title_1");
-    });
-
-    $('.panel-title').click(function () {
        $(this).toggleClass("panel-title_1");
     });
 
