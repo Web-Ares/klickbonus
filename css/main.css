@@ -494,16 +494,26 @@
 /* ----------- /reviews-slide ----------- */
 
 /* ----------- tabs__item ----------- */
-.tabs__item-wrap{
+.tabs__wrap{
     background-color: #f5f5f5;
 }
+
 .tabs__item{
     display: block;
     min-width: 297px;
     text-align: center;
     font-weight: 300;
     padding-top: 16px;
-    background: #f5f5f5;
+    background: #fff;
+    padding-bottom: 34px;
+    margin-bottom: 16px;
+    width: 297px;
+    margin: 0 auto 16px;
+    transition: box-shadow 0.3s ease 0s;
+    -moz-transition: box-shadow 0.3s ease 0s;
+}
+.tabs__item:hover{
+    box-shadow: 0 0 4px #000;
 }
 .tabs__item-title{
     display: block;
@@ -515,21 +525,124 @@
     display: block;
     font-size: 14px;
     color: #26aed7;
+    margin-bottom: 28px;
 }
 .tabs__item-list{
     display: block;
+    font-size: 14px;
+    width: 255px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 11px;
+    max-height: 60px;
+    min-height: 60px;
+}
+.tabs__item-list li:last-child{
+    margin-bottom: 0;
+}
+.tabs__item-list li:after{
+    content: '';
+    position: absolute;
+    background: #ececec;
+    height: 1px;
+    top: -10px;
+    left: -30px;
+    right: 0;
+    width: 257px;
+}
+.mobile{
+    display: block;
+}
+.tablet{
+    display: none;
+}
+.tabs__item-list li{
+    display: block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-bottom: 16px;
+    max-width: 200px;
+    margin: 0 auto 16px;
+}
+.tabs__item-list li:before{
+    content: "";
+    position: absolute;
+    margin-left: -22px;
+    width: 15px;
+    height: 13px;
+    background: url("../img/cheack_arrow.png");
+    background-repeat: no-repeat;
+}
+.tabs__item-control-wrap{
+    background: #26aed7;
+}
+.tabs__item-control-wrap>div{
+    padding: 0;
+}
+.tabs__item-control{
+    margin-bottom: 25px;
+    border: none;
+    padding-left: 7%;
+}
+.tabs__item-control li{
+    padding-bottom: 13px;
+}
+.tabs__item-control li a{
+    color: #ffffff;
+    padding: 0 5px 0;
+    border: none;
+    border-bottom: 1px dashed #fff;
+    font-size: 18px;
+    margin-left: 0;
+    margin-right: 27px;
+    padding-top: 13px;
+}
+.tabs__item-control li:last-child a{
+    margin-right: 0;
+    margin-left: 0;
+}
+.tabs__item-control li.active a, .tabs__item-control li.active a:focus,  .tabs__item-control li a:hover, .tabs__item-control li.active a:hover, .tabs__item-control li.focus a{
+    background: none;
+    color: #fff;
+    border: none;
 
 }
 .price{
     display: block;
+    font-size: 48px;
+    line-height: 37px;
+    background-color: #f5f5f5;
+    padding-top: 20px;
+    padding-bottom: 2px;
 }
 .price span{
     display: block;
+    font-size: 14px;
+    font-style: italic;
 }
 .tabs__item .btn_order{
     color: #000;
     text-align: center;
     font-weight: 300;
+}
+.app_title{
+    display: block;
+    font-size: 24px;
+    padding-top: 15px;
+    line-height: 27px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.app_price{
+    display: block;
+    font-style: italic;
+    font-size: 14px;
+    left: -4px;
+    position: relative;
+    margin-bottom: 21px;
+}
+.tabs__item .btn_order{
+
 }
 /* ----------- /tabs__item ----------- */
 
@@ -728,6 +841,31 @@
         letter-spacing: -0.8px;
     }
     /* ----------- /btn ----------- */
+    /* ----------- tabs__item ----------- */
+    .tabs__item {
+        width: 303px;
+        margin-bottom: 18px;
+    }
+    .tabs__item-control{
+        max-width: 527px;
+        padding-left: 48px;
+        margin: 0 auto;
+        background: #26aed7;
+        margin-bottom: 30px;
+    }
+    .tabs__item-control-wrap{
+        background: none;
+    }
+    .mobile{
+        display: none;
+    }
+    .tablet{
+        display: block;
+    }
+    .tabs__item-control li a {
+        margin-right: 56px;
+    }
+    /* ----------- /tabs__item ----------- */
 }
 @media (min-width: 1024px){
     /* ----------- site----------- */
@@ -782,4 +920,22 @@
         top: 31px;
     }
     /* ----------- /btn ----------- */
+
+    /* ----------- tabs__item ----------- */
+    .tabs__item {
+        width: 360px;
+    }
+    .app_title {
+        padding: 15px 27px 0 34px;
+    }
+    .app_price {
+        padding-right: 6px;
+    }
+    .tabs__item .btn_order {
+        font-size: 18px;
+        left: 1px;
+        padding: 15px 0px 14px 0px;
+        letter-spacing: 1px;
+    }
+    /* ----------- /tabs__item ----------- */
 }
