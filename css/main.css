@@ -6,13 +6,9 @@
 /*
     main styles
     version: 15.01.2013
-
     placeholder
-
     fonts
-
     site
-
     logo
 */
 
@@ -61,35 +57,14 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 85px;
-    font-size: 14px;
+    height: 100px;
 }
 .site__footer-layout {
     width: 100%;
-    height: 85px;
-    background: #f5f5f5;
-}
-.site__footer-copyright{
-    position: absolute;
-    top: 21px;
-    left: 18px;
-}
-.site__footer-developed{
-    position: absolute;
-    top: 45px;
-    left: 17px;
-}
-.site__footer-developed a{
-    text-decoration: underline;
-    color: #a1a1a1;
-    transition: color 0.3s ease 0s;
-    -moz-transition: color 0.3s ease 0s;
 
+    height: 100px;
+    background: blue;
 }
-.site__footer-developed a:hover{
-    color: #8dd1e6;
-}
-
 
 /* --------------- /site --------------- */
 
@@ -124,7 +99,7 @@
     display: block;
     top: -10px;
     left: 50%;
-    margin-left: -14px;
+    margin-left: -11px;
     width: 28px;
     height: 12px;
     background: #fff;
@@ -491,7 +466,6 @@
     background-color: #fff;
 }
 /* ----------- /reviews-slide ----------- */
-
 /* ----------- tabs__item ----------- */
 .tabs__item-wrap{
     background-color: #f5f5f5;
@@ -544,9 +518,7 @@
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: 18px 14px;
-
 }
-
 .contacts .btn_order, .btn_order{
     display: block;
     position: relative;
@@ -554,6 +526,8 @@
     padding: 14px 0;
     text-transform: uppercase;
     font-size: 18px;
+    text-align: center;
+    font-weight: 300;
     background-color: #fff;
     border: 1px solid #8dd1e6;
     border-radius: 3px;
@@ -615,6 +589,13 @@
 }
 /* ----------- /contacts ----------- */
 /* ----------- /benefits ----------- */
+.benefits{
+     padding-bottom: 10px;
+     margin-bottom: 44px;
+}
+.benefits .panel-group .panel+.panel {
+    margin-top: 3px;
+}
 .benefits .panel {
     position: relative;
     margin-bottom: 3px;
@@ -666,7 +647,7 @@
     line-height: 18px;
 }
 .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
-     border-top: none;
+    border-top: none;
 }
 .benefits img{
     display: block;
@@ -679,9 +660,92 @@
     padding: 3px 0 15px 48px;
 }
 /* ----------- /benefits ----------- */
-
+.modal-content {
+    background-color: #1caff0;
+    border-radius: 0;
+}
+.modal-dialog {
+    position: absolute;
+    width: 243px;
+    top: 50%;
+    margin-top: -136px;
+    left: 50%;
+    margin-left: -137px;
+}
+.modal-header .close {
+    margin-top: -10px;
+    margin-right: -39px;
+}
+.close {
+    position: relative;
+    font-size: 21px;
+    color: #fff;
+    box-shadow: none;
+    opacity: 1;
+}
+.close:before{
+    position: absolute;
+    right: -18px;
+    top: -6px;
+    content: "";
+    width: 29px;
+    height:30px;
+    background: url("../img/close.png") no-repeat center;
+}
+.navbar-form .form-control {
+    display: block;
+    vertical-align: middle;
+    margin-bottom: 19px;
+    height: 51px;
+    width: 200px;
+    padding-left: 14px;
+    font-size: 18px;
+}
+.modal-title {
+    color: #fff;
+}
+.modal-header {
+    min-height: 0;
+    padding: 17px 17px 6px 21px;
+    border-bottom: none;
+    letter-spacing: 2.3px;
+}
+.modal-body {
+    padding: 5px;
+}
+.btn {
+    font-size: 18px;
+    padding: 11px 45px;
+}
+.navbar-form {
+    padding: 10px 15px;
+    margin-right: 0;
+    margin-left: 0;
+}
 @media (min-width: 768px){
 
+    .navbar-form .form-control {
+        display: block;
+        vertical-align: middle;
+        margin-bottom: 19px;
+        height: 51px;
+        width: 232px;
+        padding-left: 14px;
+        font-size: 18px;
+    }
+    .btn {
+        font-size: 18px;
+        padding: 11px 60px;
+        margin-bottom: 10px;
+    }
+    .modal-dialog {
+        position: absolute;
+        width: 275px;
+        top: 50%;
+        margin-top: -136px;
+        left: 50%;
+        margin-left: -137px;
+    }
     .site__header {
         position: relative;
         height: 111px;
@@ -690,15 +754,6 @@
     .site__title {
         font-size: 31px;
         margin-bottom: 28px;
-    }
-    .site__footer-copyright{
-        top: 35px;
-        left: 15px;
-    }
-    .site__footer-developed{
-        left: auto;
-        right: 143px;
-        top: 36px;
     }
     .site__title>span {
         width: 396px;
@@ -714,13 +769,6 @@
     }
 
     /* ----------- logo ----------- */
-
-    /* ----------- btn_up ----------- */
-    .btn_up{
-        right: 23px;
-        top: 31px;
-    }
-    /* ----------- /btn_up ----------- */
     .logo {
         top: 0;
         left: 10px;
@@ -744,7 +792,6 @@
     .navbar {
         top: 45px;
     }
-
     /* ----------- reviews ----------- */
     .reviews-slide {
         height: 489px;
@@ -766,37 +813,12 @@
     }
     /* ----------- /reviews ----------- */
 
-    /* ----------- contacts ----------- */
-    .social_block a{
-        display: inline-block;
-        text-align: center;
-        padding-left: 33px;
-        margin-right: 18px;
-    }
-    .social_block {
-        width: auto;
-        padding-left: 60px;
-        margin-bottom: 39px;
-    }
-    .contacts_block {
-        margin-bottom: 39px;
-    }
-    .contacts {
-        margin-bottom: 37px;
-    }
-    /* ----------- /contacts ----------- */
-
-    /* ----------- btn ----------- */
-    .contacts .btn_order,.btn_order{
-        font-size: 24px;
-        padding: 11px 0;
-        letter-spacing: -0.8px;
-    }
-    /* ----------- /btn ----------- */
-
     /* ----------- /benefits ----------- */
+    .benefits {
+        margin-bottom: 52px;
+    }
     .benefits .panel {
-        margin-bottom: 0px;
+        margin-bottom: 0;
         border: none;
         -webkit-box-shadow: none;
         box-shadow: none;
@@ -807,7 +829,7 @@
         margin-bottom: 18px;
     }
     .benefits .panel-group {
-        margin-bottom: 20px;
+        margin-bottom: 42px;
         padding-left: 148px;
         padding-right: 119px;
     }
@@ -857,7 +879,170 @@
     }
     /* ----------- /promo-slide ----------- */
 }
-@media (min-width: 1024px){
+
+@media (min-width: 768px){
+    .navbar-form .form-control {
+        display: block;
+        vertical-align: middle;
+        margin-bottom: 19px;
+        height: 51px;
+        width: 232px;
+        padding-left: 14px;
+        font-size: 18px;
+    }
+    .btn {
+        font-size: 18px;
+        padding: 11px 60px;
+        margin-bottom: 10px;
+    }
+    .modal-dialog {
+        position: absolute;
+        width: 275px;
+        top: 50%;
+        margin-top: -136px;
+        left: 50%;
+        margin-left: -137px;
+    }
+    .site__header {
+        position: relative;
+        height: 111px;
+        padding-top: 7px;
+    }
+    .site__title {
+        font-size: 31px;
+        margin-bottom: 44px;
+        letter-spacing: -0.5px;
+    }
+    .site__title>span {
+        width: 396px;
+        margin: 0 auto 26px;
+    }
+    .capabilities ul{
+        padding-left: 40px;
+    }
+    .navbar-default .navbar-nav > li{
+        margin-left: 68px;
+    }
+    .navbar-default .navbar-nav > li:first-child{
+        margin-left: 0;
+    }
+
+    /* ----------- logo ----------- */
+    .logo {
+        top: 0;
+        left: 10px;
+    }
+    .logo img {
+        width: 275px;
+        height: 42px;
+    }
+    /* ----------- /logo ----------- */
+
+    /* ----------- feedback ----------- */
+    .feedback{
+        float: right;
+        padding-top: 20px;
+    }
+    .feedback a.phone {
+        margin-left: 30px;
+        letter-spacing: 0;
+    }
+    /* ----------- /feedback ----------- */
+    .navbar {
+        top: 45px;
+    }
+    /* ----------- reviews ----------- */
+    .reviews-slide {
+        height: 489px;
+        margin-bottom: 25px;
+    }
+    .reviews-slide .item {
+        height: 450px;
+    }
+    .reviews-slide .carousel-caption {
+        right: 2.5%;
+        left: 2.5%;
+    }
+    .reviews-slide p {
+        line-height: 24px;
+        font-weight: 300;
+        padding: 16px 15px 17px 14px;
+        margin-bottom: 30px;
+        letter-spacing: -1.5px;
+    }
+    /* ----------- /reviews ----------- */
+
+    /* ----------- /benefits ----------- */
+    .benefits {
+        margin-bottom: 52px;
+    }
+    .benefits .panel {
+        margin-bottom: 0;
+        border: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .benefits img {
+        width: 532px;
+        height: 307px;
+        margin-top: -13px;
+        margin-bottom: 18px;
+    }
+    .benefits .panel-group .panel+.panel {
+        margin-top: 4px;
+    }
+    .benefits .panel-group {
+        margin-bottom: 42px;
+        padding-left: 148px;
+        padding-right: 119px;
+    }
+    .benefits .panel-title {
+        font-size: 21px;
+    }
+    .benefits .panel-body {
+        padding: 3px 18px 13px 48px;
+    }
+    .benefits .panel-body{
+        border-bottom: 2px solid #e9e9e9;
+    }
+    /* ----------- /benefits ----------- */
+
+    /* ----------- promo-slide ----------- */
+    .promo-slide .carousel-inner > .item > img {
+        top: auto;
+        left: 50%;
+        margin-left: 6%;
+        bottom: 49px;
+        height: 328px;
+        min-width: 100px;
+    }
+    .promo-slide .carousel-caption {
+        right: 43%;
+        left: 14.3%;
+        bottom: auto;
+        padding-top: 32px;
+    }
+    .promo-slide h1 {
+        font-size: 60px;
+        padding-right: 150px;
+    }
+    .promo-slide h1>span {
+        margin: 18px auto 28px;
+    }
+    .promo-slide p {
+        font-size: 29px;
+        line-height: 33px;
+    }
+    .promo-slide .carousel-indicators {
+        bottom: 15px;
+        margin-left: -13%;
+    }
+    .promo-slide {
+        margin-bottom: 66px;
+    }
+    /* ----------- /promo-slide ----------- */
+}
+@media (min-width: 1170px){
     /* ----------- site----------- */
     .site__footer-copyright {
         top: 35px;
@@ -868,6 +1053,12 @@
         left: auto;
         right: 92px;
         top: 35px;
+    }
+    .site__title>span {
+        margin: 0 auto 25px;
+    }
+    .site__title {
+        margin-bottom: 49px;
     }
     /* ----------- /site ----------- */
     .capabilities ul{
@@ -910,5 +1101,20 @@
         top: 31px;
     }
     /* ----------- /btn ----------- */
+
+    /* ----------- benefits ----------- */
+    .benefits .panel-group {
+        margin-top: 18px;
+        margin-bottom: 42px;
+        padding-left: 0;
+        padding-right: 0;
+        width: 460px;
+    }
+    .benefits img {
+        float: right;
+        width: 532px;
+        height: 307px;
+    }
+    /* ----------- /benefits ----------- */
 
 }
