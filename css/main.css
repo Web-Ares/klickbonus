@@ -61,14 +61,36 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 100px;
+    height: 85px;
+    font-size: 14px;
 }
 .site__footer-layout {
     width: 100%;
-
-    height: 100px;
-    background: blue;
+    height: 85px;
+    background: #f5f5f5;
 }
+.site__footer-copyright{
+    position: absolute;
+    top: 21px;
+    left: 18px;
+}
+.site__footer-developed{
+    position: absolute;
+    top: 45px;
+    left: 17px;
+}
+.site__footer-developed a{
+    text-decoration: underline;
+    color: #a1a1a1;
+    transition: color 0.3s ease 0s;
+    -moz-transition: color 0.3s ease 0s;
+
+}
+.site__footer-developed a:hover{
+    color: #8dd1e6;
+}
+
+
 /* --------------- /site --------------- */
 
 /* --------------- logo --------------- */
@@ -470,7 +492,89 @@
     background-color: #fff;
 }
 /* ----------- /reviews-slide ----------- */
+/* ----------- btn ----------- */
+.btn_up{
 
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-color: #8dd1e6;
+    right: 18px;
+    bottom: 1px;
+    background-image: url("../img/arrow_up.png");
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 18px 14px;
+
+}
+
+.contacts .btn_order{
+    display: block;
+    position: relative;
+    width: 234px;
+    padding: 14px 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    background-color: #fff;
+    border: 1px solid #8dd1e6;
+    border-radius: 3px;
+    margin: 0 auto;
+    letter-spacing: 1.4px;
+    transition: color 0.3s ease 0s, border 0.3s ease 0s, background 0.3s ease 0s;
+    -moz-transition: color 0.3s ease 0s, border 0.3s ease 0s, background 0.3s ease 0s;
+}
+.contacts .btn_order:hover{
+    color: #ffffff;
+    border: 1px solid #fff;
+    background: #8dd1e6;
+}
+/* ----------- /btn ----------- */
+
+/* ----------- contacts ----------- */
+.contacts{
+    position: relative;
+    font-weight: 300;
+    margin-bottom: 26px;
+}
+.contacts a{
+    display: block;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 13px;
+}
+.contacts .email_contacts{
+    text-decoration: underline;
+}
+.contacts_block{
+    margin-bottom: 28px;
+}
+.social_block{
+    width: 290px;
+    padding-left: 3px;
+    margin: 0 auto 33px;
+}
+.social_block a{
+    display: block;
+    position: relative;
+    background-image: url("../img/skype_image.png");
+    background-repeat: no-repeat;
+    text-align: left;
+    padding-left: 35px;
+    padding-top: 3px;
+    margin-bottom: 6px;
+    min-height: 24px;
+    vertical-align: middle;
+}
+.social_block .social_block-phone1{
+    background-image: url("../img/info_image.png");
+    background-repeat: no-repeat;
+}
+.social_block .social_block-phone2{
+    background-image: url("../img/phone_image.png");
+    background-repeat: no-repeat;
+}
+/* ----------- /contacts ----------- */
 @media (min-width: 768px){
 
     .site__header {
@@ -481,6 +585,15 @@
     .site__title {
         font-size: 31px;
         margin-bottom: 28px;
+    }
+    .site__footer-copyright{
+        top: 35px;
+        left: 15px;
+    }
+    .site__footer-developed{
+        left: auto;
+        right: 143px;
+        top: 36px;
     }
     .site__title>span {
         width: 396px;
@@ -496,6 +609,13 @@
     }
 
     /* ----------- logo ----------- */
+
+    /* ----------- btn_up ----------- */
+    .btn_up{
+        right: 23px;
+        top: 31px;
+    }
+    /* ----------- /btn_up ----------- */
     .logo {
         top: 0;
         left: 10px;
@@ -540,8 +660,48 @@
         letter-spacing: -1.5px;
     }
     /* ----------- /reviews ----------- */
+
+    /* ----------- contacts ----------- */
+    .social_block a{
+        display: inline-block;
+        text-align: center;
+        padding-left: 33px;
+        margin-right: 18px;
+    }
+    .social_block {
+        width: auto;
+        padding-left: 60px;
+        margin-bottom: 39px;
+    }
+    .contacts_block {
+        margin-bottom: 39px;
+    }
+    .contacts {
+        margin-bottom: 37px;
+    }
+    /* ----------- /contacts ----------- */
+
+    /* ----------- btn ----------- */
+    .contacts .btn_order{
+        font-size: 24px;
+        padding: 11px 0;
+        letter-spacing: -0.8px;
+    }
+    /* ----------- /btn ----------- */
 }
 @media (min-width: 1024px){
+    /* ----------- site----------- */
+    .site__footer-copyright {
+        top: 35px;
+        left: 50%;
+        margin-left: -61px;
+    }
+    .site__footer-developed {
+        left: auto;
+        right: 92px;
+        top: 35px;
+    }
+    /* ----------- /site ----------- */
     .capabilities ul{
         padding-left: 0;
     }
@@ -555,9 +715,31 @@
     }
 
     /* ----------- logo ----------- */
+
     .logo {
         top: 40px;
         left: 10px;
     }
     /* ----------- /logo ----------- */
+    /* ----------- contacts----------- */
+    .contacts a {
+        margin-bottom: 14px;
+    }
+    .social_block {
+        padding-left: 256px;
+        margin-bottom: 30px;
+    }
+    .contacts .btn_order {
+        left: 3px;
+    }
+    .contacts {
+        margin-bottom: 60px;
+    }
+    /* ----------- contacts ----------- */
+    /* ----------- btn ----------- */
+    .btn_up {
+        right: 102px;
+        top: 31px;
+    }
+    /* ----------- /btn ----------- */
 }
