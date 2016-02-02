@@ -29,6 +29,12 @@ Shablon.prototype = {
     }
 };
 
+$('#slide_up').on({
+    'click':function(){
+        $('html, body').animate({scrollTop: 0}, 600);
+    }
+});
+
 $(window).on({
     load: function () {
         
