@@ -492,9 +492,49 @@
     background-color: #fff;
 }
 /* ----------- /reviews-slide ----------- */
+
+/* ----------- tabs__item ----------- */
+.tabs__item-wrap{
+    background-color: #f5f5f5;
+}
+.tabs__item{
+    display: block;
+    min-width: 297px;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 16px;
+    background: #f5f5f5;
+}
+.tabs__item-title{
+    display: block;
+    font-size: 48px;
+    color: #26aed7;
+    margin-bottom: 6px;
+}
+.tabs__item-subtitle{
+    display: block;
+    font-size: 14px;
+    color: #26aed7;
+}
+.tabs__item-list{
+    display: block;
+
+}
+.price{
+    display: block;
+}
+.price span{
+    display: block;
+}
+.tabs__item .btn_order{
+    color: #000;
+    text-align: center;
+    font-weight: 300;
+}
+/* ----------- /tabs__item ----------- */
+
 /* ----------- btn ----------- */
 .btn_up{
-
     position: absolute;
     width: 55px;
     height: 55px;
@@ -508,7 +548,7 @@
 
 }
 
-.contacts .btn_order{
+.contacts .btn_order, .btn_order{
     display: block;
     position: relative;
     width: 234px;
@@ -523,7 +563,7 @@
     transition: color 0.3s ease 0s, border 0.3s ease 0s, background 0.3s ease 0s;
     -moz-transition: color 0.3s ease 0s, border 0.3s ease 0s, background 0.3s ease 0s;
 }
-.contacts .btn_order:hover{
+.contacts .btn_order:hover, .btn_order:hover{
     color: #ffffff;
     border: 1px solid #fff;
     background: #8dd1e6;
@@ -682,7 +722,7 @@
     /* ----------- /contacts ----------- */
 
     /* ----------- btn ----------- */
-    .contacts .btn_order{
+    .contacts .btn_order,.btn_order{
         font-size: 24px;
         padding: 11px 0;
         letter-spacing: -0.8px;
@@ -729,7 +769,7 @@
         padding-left: 256px;
         margin-bottom: 30px;
     }
-    .contacts .btn_order {
+    .contacts .btn_order, .btn_order {
         left: 3px;
     }
     .contacts {

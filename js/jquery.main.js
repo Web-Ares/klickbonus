@@ -35,6 +35,8 @@ $('#slide_up').on({
     }
 });
 
+
+
 $(window).on({
     load: function () {
         
