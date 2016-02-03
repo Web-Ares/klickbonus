@@ -33,6 +33,7 @@
     min-width: 320px;
     font-family: "Roboto", sans-serif;
     color: #797979;
+    overflow-x: hidden;
 }
 .site:after {
     content: '';
@@ -57,17 +58,32 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 100px;
+    height: 85px;
+    font-size: 14px;
 }
 .site__footer-layout {
     width: 100%;
-
-    height: 100px;
-    background: blue;
+    height: 85px;
+    background: #f5f5f5;
 }
 
 /* --------------- /site --------------- */
-
+.site__footer-copyright {
+    position: absolute;
+    top: 21px;
+    left: 18px;
+}
+.site__footer-developed {
+    position: absolute;
+    top: 45px;
+    left: 17px;
+}
+.site__footer-developed a {
+    text-decoration: underline;
+    color: #a1a1a1;
+    transition: color 0.3s ease 0s;
+    -moz-transition: color 0.3s ease 0s;
+}
 /* --------------- logo --------------- */
 .logo {
     position: absolute;
@@ -889,7 +905,26 @@
     .navbar-default .navbar-nav > li:first-child{
         margin-left: 0;
     }
-
+    .contacts_block {
+        margin-bottom: 39px;
+    }
+    .social_block {
+        width: auto;
+        padding-left: 60px;
+        margin-bottom: 39px;
+        text-align: center;
+    }
+    .social_block a {
+        display: inline-block;
+        text-align: center;
+        padding-left: 33px;
+        margin-right: 18px;
+    }
+    .contacts .btn_order, .btn_order {
+        font-size: 24px;
+        padding: 11px 0;
+        letter-spacing: -0.8px;
+    }
     /* ----------- logo ----------- */
     .logo {
         top: 0;
@@ -1031,6 +1066,15 @@
         margin-right: 56px;
     }
     /* ----------- /tabs__item ----------- */
+    .site__footer-copyright {
+        top: 35px;
+        left: 15px;
+    }
+    .site__footer-developed {
+        left: auto;
+        right: 143px;
+        top: 36px;
+    }
 }
 @media (min-width: 1170px){
     /* ----------- site----------- */
@@ -1053,6 +1097,16 @@
     }
     .site__title>span>span {
         margin-left: -14px;
+    }
+    .site__footer-copyright {
+        top: 35px;
+        left: 50%;
+        margin-left: -61px;
+    }
+    .site__footer-developed {
+        left: auto;
+        right: 92px;
+        top: 35px;
     }
     /* ----------- /site ----------- */
 
@@ -1081,7 +1135,22 @@
         padding: 15px 0;
     }
     /* ----------- /navbar-nav ----------- */
-
+    .contacts {
+        margin-bottom: 60px;
+    }
+    .contacts a {
+        margin-bottom: 14px;
+    }
+    .social_block {
+        padding-left: 256px;
+        margin-bottom: 30px;
+    }
+    .contacts a {
+        margin-bottom: 14px;
+    }
+    .contacts .btn_order, .btn_order {
+        left: 3px;
+    }
     /* ----------- logo ----------- */
     .logo {
         top: 40px;
