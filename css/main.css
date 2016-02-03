@@ -6,13 +6,9 @@
 /*
     main styles
     version: 15.01.2013
-
     placeholder
-
     fonts
-
     site
-
     logo
 */
 
@@ -61,35 +57,14 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 85px;
-    font-size: 14px;
+    height: 100px;
 }
 .site__footer-layout {
     width: 100%;
-    height: 85px;
-    background: #f5f5f5;
-}
-.site__footer-copyright{
-    position: absolute;
-    top: 21px;
-    left: 18px;
-}
-.site__footer-developed{
-    position: absolute;
-    top: 45px;
-    left: 17px;
-}
-.site__footer-developed a{
-    text-decoration: underline;
-    color: #a1a1a1;
-    transition: color 0.3s ease 0s;
-    -moz-transition: color 0.3s ease 0s;
 
+    height: 100px;
+    background: blue;
 }
-.site__footer-developed a:hover{
-    color: #8dd1e6;
-}
-
 
 /* --------------- /site --------------- */
 
@@ -124,7 +99,7 @@
     display: block;
     top: -10px;
     left: 50%;
-    margin-left: -14px;
+    margin-left: -11px;
     width: 28px;
     height: 12px;
     background: #fff;
@@ -176,7 +151,7 @@
 }
 .site__header .feedback a.phone{
     font-weight: 700;
-    margin-left: 13px;
+    margin-left: 12px;
 }
 .site__header .feedback a.email{
     text-decoration: underline;
@@ -274,6 +249,9 @@
 /* ----------- /header__menu ----------- */
 
 /* ----------- promo-slide ----------- */
+.promo{
+    background-color: #163849;
+}
 .promo-slide{
     height: 411px;
     margin-bottom: 34px;
@@ -491,7 +469,6 @@
     background-color: #fff;
 }
 /* ----------- /reviews-slide ----------- */
-
 /* ----------- tabs__item ----------- */
 .tabs__wrap{
     background-color: #f5f5f5;
@@ -657,9 +634,7 @@
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: 18px 14px;
-
 }
-
 .contacts .btn_order, .btn_order{
     display: block;
     position: relative;
@@ -667,6 +642,8 @@
     padding: 14px 0;
     text-transform: uppercase;
     font-size: 18px;
+    text-align: center;
+    font-weight: 300;
     background-color: #fff;
     border: 1px solid #8dd1e6;
     border-radius: 3px;
@@ -728,6 +705,13 @@
 }
 /* ----------- /contacts ----------- */
 /* ----------- /benefits ----------- */
+.benefits{
+     padding-bottom: 10px;
+     margin-bottom: 44px;
+}
+.benefits .panel-group .panel+.panel {
+    margin-top: 3px;
+}
 .benefits .panel {
     position: relative;
     margin-bottom: 3px;
@@ -779,7 +763,7 @@
     line-height: 18px;
 }
 .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
-     border-top: none;
+    border-top: none;
 }
 .benefits img{
     display: block;
@@ -792,9 +776,92 @@
     padding: 3px 0 15px 48px;
 }
 /* ----------- /benefits ----------- */
+.modal-content {
+    background-color: #1caff0;
+    border-radius: 0;
+}
+.modal-dialog {
+    position: absolute;
+    width: 243px;
+    top: 50%;
+    margin-top: -136px;
+    left: 50%;
+    margin-left: -137px;
+}
+.modal-header .close {
+    margin-top: -10px;
+    margin-right: -39px;
+}
+.close {
+    position: relative;
+    font-size: 21px;
+    color: #fff;
+    box-shadow: none;
+    opacity: 1;
+}
+.close:before{
+    position: absolute;
+    right: -18px;
+    top: -6px;
+    content: "";
+    width: 29px;
+    height:30px;
+    background: url("../img/close.png") no-repeat center;
+}
+.navbar-form .form-control {
+    display: block;
+    vertical-align: middle;
+    margin-bottom: 19px;
+    height: 51px;
+    width: 200px;
+    padding-left: 14px;
+    font-size: 18px;
+}
+.modal-title {
+    color: #fff;
+}
+.modal-header {
+    min-height: 0;
+    padding: 17px 17px 6px 21px;
+    border-bottom: none;
+    letter-spacing: 2.3px;
+}
+.modal-body {
+    padding: 5px;
+}
+.btn {
+    font-size: 18px;
+    padding: 11px 45px;
+}
+.navbar-form {
+    padding: 10px 15px;
+    margin-right: 0;
+    margin-left: 0;
+}
 
 @media (min-width: 768px){
-
+    .navbar-form .form-control {
+        display: block;
+        vertical-align: middle;
+        margin-bottom: 19px;
+        height: 51px;
+        width: 232px;
+        padding-left: 14px;
+        font-size: 18px;
+    }
+    .btn {
+        font-size: 18px;
+        padding: 11px 60px;
+        margin-bottom: 10px;
+    }
+    .modal-dialog {
+        position: absolute;
+        width: 275px;
+        top: 50%;
+        margin-top: -136px;
+        left: 50%;
+        margin-left: -137px;
+    }
     .site__header {
         position: relative;
         height: 111px;
@@ -802,19 +869,15 @@
     }
     .site__title {
         font-size: 31px;
-        margin-bottom: 28px;
-    }
-    .site__footer-copyright{
-        top: 35px;
-        left: 15px;
-    }
-    .site__footer-developed{
-        left: auto;
-        right: 143px;
-        top: 36px;
+        margin-bottom: 44px;
+        letter-spacing: -0.5px;
     }
     .site__title>span {
         width: 396px;
+        margin: 0 auto 26px;
+    }
+    .capabilities {
+        padding: 0 16%;
     }
     .capabilities ul{
         padding-left: 40px;
@@ -827,13 +890,6 @@
     }
 
     /* ----------- logo ----------- */
-
-    /* ----------- btn_up ----------- */
-    .btn_up{
-        right: 23px;
-        top: 31px;
-    }
-    /* ----------- /btn_up ----------- */
     .logo {
         top: 0;
         left: 10px;
@@ -857,11 +913,11 @@
     .navbar {
         top: 45px;
     }
-
     /* ----------- reviews ----------- */
     .reviews-slide {
         height: 489px;
-        margin-bottom: 25px;
+        max-width: 1200px;
+        margin: 0 auto 25px;
     }
     .reviews-slide .item {
         height: 450px;
@@ -879,37 +935,12 @@
     }
     /* ----------- /reviews ----------- */
 
-    /* ----------- contacts ----------- */
-    .social_block a{
-        display: inline-block;
-        text-align: center;
-        padding-left: 33px;
-        margin-right: 18px;
-    }
-    .social_block {
-        width: auto;
-        padding-left: 60px;
-        margin-bottom: 39px;
-    }
-    .contacts_block {
-        margin-bottom: 39px;
-    }
-    .contacts {
-        margin-bottom: 37px;
-    }
-    /* ----------- /contacts ----------- */
-
-    /* ----------- btn ----------- */
-    .contacts .btn_order,.btn_order{
-        font-size: 24px;
-        padding: 11px 0;
-        letter-spacing: -0.8px;
-    }
-    /* ----------- /btn ----------- */
-
     /* ----------- /benefits ----------- */
+    .benefits {
+        margin-bottom: 52px;
+    }
     .benefits .panel {
-        margin-bottom: 0px;
+        margin-bottom: 0;
         border: none;
         -webkit-box-shadow: none;
         box-shadow: none;
@@ -917,10 +948,14 @@
     .benefits img {
         width: 532px;
         height: 307px;
+        margin-top: -13px;
         margin-bottom: 18px;
     }
+    .benefits .panel-group .panel+.panel {
+        margin-top: 4px;
+    }
     .benefits .panel-group {
-        margin-bottom: 20px;
+        margin-bottom: 42px;
         padding-left: 148px;
         padding-right: 119px;
     }
@@ -952,10 +987,10 @@
     }
     .promo-slide h1 {
         font-size: 60px;
-        padding-right: 150px;
     }
     .promo-slide h1>span {
-        margin: 18px auto 28px;
+        width: 207px;
+        margin: 18px 0 26px;
     }
     .promo-slide p {
         font-size: 29px;
@@ -966,7 +1001,8 @@
         margin-left: -13%;
     }
     .promo-slide {
-        margin-bottom: 66px;
+        max-width: 1170px;
+        margin: 0 auto 66px;
     }
     /* ----------- /promo-slide ----------- */
     /* ----------- tabs__item ----------- */
@@ -995,7 +1031,7 @@
     }
     /* ----------- /tabs__item ----------- */
 }
-@media (min-width: 1024px){
+@media (min-width: 1170px){
     /* ----------- site----------- */
     .site__footer-copyright {
         top: 35px;
@@ -1007,26 +1043,51 @@
         right: 92px;
         top: 35px;
     }
+    .site__title>span {
+        width: 359px;
+        margin: 0 auto 27px;
+    }
+    .site__title {
+        margin-bottom: 49px;
+    }
+    .site__title>span>span {
+        margin-left: -14px;
+    }
     /* ----------- /site ----------- */
+
+    /* ----------- capabilities ----------- */
+    .capabilities {
+        margin-bottom: 31px;
+        padding: 0;
+    }
     .capabilities ul{
         padding-left: 0;
     }
     .capabilities__item {
+        margin-bottom: 73px;
     }
+    /* ----------- /capabilities ----------- */
+
+    /* ----------- navbar-nav ----------- */
     .navbar-nav {
         float: right;
     }
     .navbar-default .navbar-nav > li {
-        margin-left: 48px;
+        margin-left: 31px;
     }
+    .navbar-default .navbar-nav > li > a {
+        font-size: 18px;
+        padding: 15px 0;
+    }
+    /* ----------- /navbar-nav ----------- */
 
     /* ----------- logo ----------- */
-
     .logo {
         top: 40px;
         left: 10px;
     }
     /* ----------- /logo ----------- */
+
     /* ----------- contacts----------- */
     .contacts a {
         margin-bottom: 14px;
@@ -1048,6 +1109,85 @@
         top: 31px;
     }
     /* ----------- /btn ----------- */
+
+    /* ----------- benefits ----------- */
+    .benefits {
+        margin-bottom: 56px;
+    }
+    .benefits .panel-group {
+        margin-top: 18px;
+        margin-bottom: 33px;
+        padding-left: 0;
+        padding-right: 0;
+        width: 740px;
+    }
+    .benefits img {
+        position: absolute;
+        right: 16px;
+        width: 360px;
+        height: 207px;
+        margin-top: 29px;
+    }
+    .benefits .panel-group .panel-heading {
+        padding: 10px 0 10px 40px;
+    }
+    .benefits .panel-body {
+        padding: 3px 18px 13px 41px;
+    }
+    .benefits .panel-title:before {
+        left: -41px;
+    }
+    .benefits .panel-body {
+        padding: 3px 18px 18px 41px;
+    }
+    .benefits .panel-title {
+        letter-spacing: -0.2px;
+    }
+    .benefits .panel-body {
+        padding: 3px 18px 37px 41px;
+    }
+    /* ----------- /benefits ----------- */
+
+    /* ----------- /benefits ----------- */
+    .site__header .feedback a.phone {
+        margin-left: 27px;
+        letter-spacing: 0.2px;
+    }
+    .feedback {
+        padding-top: 12px;
+    }
+    /* ----------- /benefits ----------- */
+
+    /* ----------- promo-slide ----------- */
+    .promo-slide {
+        margin: 0 auto 62px;
+    }
+    .promo-slide .carousel-caption {
+        right: 43%;
+        left: 16.9%;
+        padding-top: 57px;
+    }
+    .promo-slide p {
+        letter-spacing: .4px;
+    }
+    .promo-slide .carousel-inner > .item > img {
+        margin-left: 9.3%;
+        bottom: 29px;
+    }
+    .promo-slide .carousel-indicators {
+        margin-left: -30%;
+    }
+    /* ----------- /promo-slide ----------- */
+
+    /* ----------- reviews ----------- */
+    .reviews-slide p {
+        padding: 19px 42px 23px 28px;
+        margin-bottom: 39px;
+    }
+    .reviews-slide {
+        height: 459px;
+    }
+    /* ----------- /reviews ----------- */
 
     /* ----------- tabs__item ----------- */
     .tabs__item {
