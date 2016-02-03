@@ -263,7 +263,6 @@
     background-color: #1cacec;
 }
 /* ----------- /header__menu ----------- */
-
 /* ----------- promo-slide ----------- */
 .promo{
     background-color: #163849;
@@ -748,7 +747,10 @@
     border-bottom: 2px solid #e9e9e9;
     padding: 10px 15px 10px 48px;
 }
-.benefits .panel-title:before{
+.benefits .click-title{
+    position: relative;
+}
+.benefits .click-title:before{
     position: absolute;
     top: 50%;
     margin-top: -18px;
@@ -759,7 +761,7 @@
     content: "";
     background: #26aed7 url("../img/accordion-icon01.png")no-repeat center;
 }
-.benefits .panel-title_1:before{
+.benefits .click-title_1:before{
     position: absolute;
     top: 50%;
     margin-top: -18px;

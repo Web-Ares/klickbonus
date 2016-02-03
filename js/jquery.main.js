@@ -1,7 +1,8 @@
 $(function(){
 
-    $('.panel-title').click(function () {
-       $(this).toggleClass("panel-title_1");
+    $('.click-title').click(function () {
+        $('.click-title').removeClass('click-title_1');
+        $(this).addClass('click-title_1')
     });
 
 } );
