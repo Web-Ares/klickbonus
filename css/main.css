@@ -23,7 +23,9 @@
     color: #000;
 }
 /* --------------- /placeholder --------------- */
-
+body{
+    padding: 0 !important;
+}
 /* --------------- site --------------- */
 .site {
     position: relative;
@@ -33,7 +35,8 @@
     min-width: 320px;
     font-family: "Roboto", sans-serif;
     color: #797979;
-    overflow-x: hidden;
+    overflow: hidden;
+    padding-top: 130px;
 }
 .site:after {
     content: '';
@@ -47,10 +50,18 @@
     z-index: 2;
 }
 .site__header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     height: 130px;
-    z-index: 3;
+    background: #fff;
     padding-top: 16px;
+    z-index: 5;
+    border-bottom: 1px solid #e9e9e9;
+    -webkit-transform: translatez(0);
+    transform: translatez(0);
 }
 .site__footer {
     z-index: 2;
@@ -91,15 +102,22 @@
     left: 13px;
     z-index: 3;
 }
-.logo img{
+.logo span{
+    display: block;
     width: 235px;
     height: 33px;
+    background: url("../img/logo.png") no-repeat center;
+    background-size: contain;
 }
 /* --------------- /logo --------------- */
+.modal-open {
+    overflow: visible !important;
+}
 .site__title{
     font-size: 24px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 23px;
+    color: #000;
     text-align: center;
     margin-bottom: 26px;
 }
@@ -115,7 +133,7 @@
     display: block;
     top: -10px;
     left: 50%;
-    margin-left: -11px;
+    margin-left: -14px;
     width: 28px;
     height: 12px;
     background: #fff;
@@ -125,7 +143,7 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 4px;
+    left: 5px;
     width: 18px;
     height: 18px;
     border: 1px solid #26aed7;
@@ -133,7 +151,7 @@
 }
 .site__title>span>span:after{
     top: 5px;
-    left: 9px;
+    left: 10px;
     width: 8px;
     height: 8px;
 }
@@ -143,7 +161,6 @@
 .capabilities__item{
     display: inline-block;
     vertical-align: top;
-    background-repeat:no-repeat;
     background-position: 6px 0;
     font-size: 14px;
     line-height: 18px;
@@ -152,7 +169,44 @@
     padding: 5px 16px 0 47px;
     margin-bottom: 31px;
 }
-.capabilities__item span{
+.capabilities__item1{
+    background: url("../img/capabilities01.png") no-repeat 31px 32px;
+    background-position: 6px 0;
+}
+.capabilities__item2{
+    background: url("../img/capabilities02.png") no-repeat 32px 31px;
+    background-position: 6px 0;
+}
+.capabilities__item3{
+    background: url("../img/capabilities03.png") no-repeat 22px 30px;
+    background-position: 14px 0;
+}
+.capabilities__item4{
+    background: url("../img/capabilities04.png") no-repeat 32px 32px;
+    background-position: 6px 0;
+}
+.capabilities__item5{
+    background: url("../img/capabilities05.png") no-repeat 31px 32px;
+    background-position: 6px 0;
+}
+.capabilities__item6{
+    background: url("../img/capabilities06.png") no-repeat 19px 31px;
+    background-position: 15px 0;
+}
+.capabilities__item7{
+    background: url("../img/capabilities07.png") no-repeat 36px 30px;
+    background-position: 6px 0;
+}
+.capabilities__item8{
+    background: url("../img/capabilities08.png") no-repeat 32px 25px;
+    background-position: 6px 0;
+}
+.capabilities__item9{
+    background: url("../img/capabilities09.png") no-repeat 31px 32px;
+    background-position: 6px 0;
+}
+
+.capabilities__item span {
     display: block;
     font-weight: 300;
     font-size: 24px;
@@ -182,6 +236,7 @@
 .navbar .navbar-collapse {
     background-color: #fff;
     border-top: none;
+    margin-left: -3px !important;
 }
 .navbar-default .navbar-toggle {
     margin: 3px 15px;
@@ -212,6 +267,8 @@
     border-radius: 0;
     text-align: center;
     background: #fff;
+    -webkit-transform: translatez(0);
+    transform: translatez(0);
 }
 .navbar .navbar-collapse{
     margin: 0 auto;
@@ -221,6 +278,7 @@
     display: inline-block;
     padding: 14px 9px 15px 0;
     font-size: 16px;
+    font-weight: 300 !important;
     color: #1cacec;
     z-index: 9;
     transition: opacity 0.3s ease 0s;
@@ -262,10 +320,24 @@
     opacity: 0.7;
     background-color: #1cacec;
 }
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 130px;
+    background: #fff;
+}
 /* ----------- /header__menu ----------- */
 /* ----------- promo-slide ----------- */
+.carousel-inner {
+    max-width: 1170px;
+}
 .promo{
     background-color: #163849;
+    margin-bottom: 60px;
+    height: 411px;
 }
 .promo-slide{
     height: 411px;
@@ -277,7 +349,8 @@
     margin-left: -11%;
     bottom: 53px;
     height: 167px;
-    min-width: 100px;
+    min-width: 0;
+    width: 150px;
 }
 .promo-slide .item {
     height: 411px;
@@ -348,7 +421,6 @@
 }
 .promo-slide .carousel-control{
     top: 50%;
-    margin-top: -36px;
     left: 15px;
     width: 36px;
     height: 70px;
@@ -356,6 +428,9 @@
     border-radius: 3px;
     opacity: 1;
     transition: opacity .3s ease;
+    -ms-transform: translate(0,-50%);
+    -webkit-transform: translate(0,-50%);
+    transform: translate(0,-50%);
 }
 .promo-slide .carousel-control.right {
     right:15px;
@@ -407,9 +482,9 @@
     background-color: #26aed7;
     border-radius: 5px;
     line-height: 18px;
+    font-weight: 300;
     padding: 12px 15px 13px 14px;
     margin-bottom: 28px;
-    letter-spacing: -1.2px;
     color: #fff;
 }
 .reviews-slide p:before{
@@ -425,6 +500,7 @@
     border-color: rgba(163, 163, 163, 0);
     border-top-color: #26aed7;
     border-width: 11px 13px 0 12px;
+    opacity: 0.7;
 }
 .reviews-pic{
     width: 120px;
@@ -469,7 +545,7 @@
 .reviews-slide .carousel-indicators .active {
     width: 11px;
     height: 11px;
-    margin: 1px 5px;
+    margin: 1px 8px 1px 8px;
     background-color: #26aed7;
 }
 .reviews-slide .carousel-caption {
@@ -478,6 +554,7 @@
     bottom: auto;
     text-align: left;
     padding-top: 0;
+    text-shadow: none;
 }
 .reviews-slide .item {
     height: 571px;
@@ -647,14 +724,17 @@
 
 /* ----------- btn ----------- */
 .btn_up{
-    position: absolute;
+    display: none;
+    position: fixed;
     width: 55px;
     height: 55px;
     background-color: #8dd1e6;
     right: 18px;
     bottom: 1px;
     background-image: url("../img/arrow_up.png");
+    overflow: hidden;
     cursor: pointer;
+    z-index: 5;
     background-repeat: no-repeat;
     background-position: 18px 14px;
 }
@@ -667,6 +747,7 @@
     font-size: 18px;
     text-align: center;
     font-weight: 300;
+    color: #000;
     background-color: #fff;
     border: 1px solid #8dd1e6;
     border-radius: 3px;
@@ -736,14 +817,12 @@
     margin-top: 3px;
 }
 .benefits .panel {
-    position: relative;
     margin-bottom: 3px;
     border: none;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
 .benefits .panel-group .panel-heading {
-    position: relative;
     border-bottom: 2px solid #e9e9e9;
     padding: 10px 15px 10px 48px;
 }
@@ -797,6 +876,13 @@
     width: 293px;
     height: 171px;
     margin-bottom: 31px;
+}
+.benefits .panel img {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -146px;
 }
 .benefits .panel-body {
     padding: 3px 0 15px 48px;
@@ -888,8 +974,10 @@
         left: 50%;
         margin-left: -137px;
     }
+    .site {
+        padding-top: 111px;
+    }
     .site__header {
-        position: relative;
         height: 111px;
         padding-top: 7px;
     }
@@ -901,9 +989,6 @@
     .site__title>span {
         width: 396px;
         margin: 0 auto 26px;
-    }
-    .capabilities {
-        padding: 0 16%;
     }
     .capabilities ul{
         padding-left: 40px;
@@ -935,12 +1020,20 @@
         padding: 11px 0;
         letter-spacing: -0.8px;
     }
+    .fixed {
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+    }
+    .fixed-menu {
+        max-width: 941px;
+    }
     /* ----------- logo ----------- */
     .logo {
         top: 0;
         left: 10px;
     }
-    .logo img {
+    .logo span {
         width: 275px;
         height: 42px;
     }
@@ -977,7 +1070,6 @@
         font-weight: 300;
         padding: 16px 15px 17px 14px;
         margin-bottom: 30px;
-        letter-spacing: -1.5px;
     }
     /* ----------- /reviews ----------- */
 
@@ -996,6 +1088,9 @@
         height: 307px;
         margin-top: -13px;
         margin-bottom: 18px;
+    }
+    .benefits .panel img {
+        margin-left: -266px;
     }
     .benefits .panel-group .panel+.panel {
         margin-top: 4px;
@@ -1024,6 +1119,7 @@
         bottom: 49px;
         height: 328px;
         min-width: 100px;
+        width: 250px;
     }
     .promo-slide .carousel-caption {
         right: 43%;
@@ -1044,11 +1140,14 @@
     }
     .promo-slide .carousel-indicators {
         bottom: 15px;
-        margin-left: -13%;
     }
     .promo-slide {
         max-width: 1170px;
         margin: 0 auto 66px;
+    }
+    .promo-slide .carousel-control{
+    }
+    .promo-slide .carousel-control.right {
     }
     /* ----------- /promo-slide ----------- */
     /* ----------- tabs__item ----------- */
@@ -1094,7 +1193,7 @@
         top: 36px;
     }
 }
-@media (min-width: 1170px){
+@media (min-width: 1200px){
     /* ----------- site----------- */
     .site__footer-copyright {
         top: 35px;
@@ -1126,6 +1225,9 @@
         right: 92px;
         top: 35px;
     }
+    .fixed-menu{
+        max-width: 1170px;
+    }
     /* ----------- /site ----------- */
 
     /* ----------- capabilities ----------- */
@@ -1151,6 +1253,7 @@
     .navbar-default .navbar-nav > li > a {
         font-size: 18px;
         padding: 15px 0;
+        font-weight: 300 !important;
     }
     /* ----------- /navbar-nav ----------- */
     .contacts {
@@ -1192,12 +1295,6 @@
         margin-bottom: 60px;
     }
     /* ----------- contacts ----------- */
-    /* ----------- btn ----------- */
-    .btn_up {
-        right: 102px;
-        top: 31px;
-    }
-    /* ----------- /btn ----------- */
 
     /* ----------- benefits ----------- */
     .benefits {
@@ -1235,6 +1332,11 @@
     .benefits .panel-body {
         padding: 3px 18px 37px 41px;
     }
+    .benefits .panel img {
+        left: auto;
+        right: 16px;
+        margin-left: -266px;
+    }
     /* ----------- /benefits ----------- */
 
     /* ----------- /benefits ----------- */
@@ -1260,11 +1362,16 @@
         letter-spacing: .4px;
     }
     .promo-slide .carousel-inner > .item > img {
+        width: 270px;
         margin-left: 9.3%;
         bottom: 29px;
     }
     .promo-slide .carousel-indicators {
         margin-left: -30%;
+    }
+    .promo-slide .carousel-control{
+    }
+    .promo-slide .carousel-control.right {
     }
     /* ----------- /promo-slide ----------- */
 
@@ -1314,4 +1421,94 @@
         margin-bottom: 45px;
     }
     /* ----------- /tabs__item ----------- */
+}
+
+@media  only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi) {
+    .capabilities__item1{
+        background: url("../img/capabilities011.png") no-repeat 31px 32px;
+        background-position: 6px 0;
+    }
+    .capabilities__item2{
+        background: url("../img/capabilities012.png") no-repeat 32px 31px;
+        background-position: 6px 0;
+    }
+    .capabilities__item3{
+        background: url("../img/capabilities013.png") no-repeat 22px 30px;
+        background-position: 14px 0;
+    }
+    .capabilities__item4{
+        background: url("../img/capabilities014.png") no-repeat 32px 32px;
+        background-position: 6px 0;
+    }
+    .capabilities__item5{
+        background: url("../img/capabilities015.png") no-repeat 31px 32px;
+        background-position: 6px 0;
+    }
+    .capabilities__item6{
+        background: url("../img/capabilities016.png") no-repeat 19px 31px;
+        background-position: 15px 0;
+    }
+    .capabilities__item7{
+        background: url("../img/capabilities017.png") no-repeat 36px 30px;
+        background-position: 6px 0;
+    }
+    .capabilities__item8{
+        background: url("../img/capabilities018.png") no-repeat 32px 25px;
+        background-position: 6px 0;
+    }
+    .capabilities__item9{
+        background: url("../img/capabilities019.png") no-repeat 31px 32px;
+        background-position: 6px 0;
+    }
+    .logo span {
+        background: url("../img/logo.png") no-repeat center;
+    }
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 3),
+only screen and (   min--moz-device-pixel-ratio: 3),
+only screen and (        min-device-pixel-ratio: 3),
+only screen and (min-resolution: 192dpi) {
+
+    .capabilities__item1{
+        background: url("../img/capabilities011.png") no-repeat 31px 32px;
+        background-position: 6px 0;
+    }
+    .capabilities__item2{
+        background: url("../img/capabilities012.png") no-repeat 32px 31px;
+        background-position: 6px 0;
+    }
+    .capabilities__item3{
+        background: url("../img/capabilities013.png") no-repeat 22px 30px;
+        background-position: 14px 0;
+    }
+    .capabilities__item4{
+        background: url("../img/capabilities014.png") no-repeat 32px 32px;
+        background-position: 6px 0;
+    }
+    .capabilities__item5{
+        background: url("../img/capabilities015.png") no-repeat 31px 32px;
+        background-position: 6px 0;
+    }
+    .capabilities__item6{
+        background: url("../img/capabilities016.png") no-repeat 19px 31px;
+        background-position: 15px 0;
+    }
+    .capabilities__item7{
+        background: url("../img/capabilities017.png") no-repeat 36px 30px;
+        background-position: 6px 0;
+    }
+    .capabilities__item8{
+        background: url("../img/capabilities018.png") no-repeat 32px 25px;
+        background-position: 6px 0;
+    }
+    .capabilities__item9{
+        background: url("../img/capabilities019.png") no-repeat 31px 32px;
+        background-position: 6px 0;
+    }
+    .logo span {
+        background: url("../img/logo.png") no-repeat center;
+    }
 }
