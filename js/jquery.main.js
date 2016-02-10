@@ -1,6 +1,6 @@
 $(function(){
     if (window.devicePixelRatio > 1) {
-        $('img').each(function () {
+        $('.item img').each(function () {
             this.src = this.getAttribute('data-full');
         });
     }
