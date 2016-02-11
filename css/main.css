@@ -168,8 +168,6 @@ body{
     color: #797979;
     padding: 5px 16px 0 47px;
     margin-bottom: 31px;
-    background-size: 32px 32px;
-    background-position: 6px 0;
 }
 .capabilities__item1{
     background: url("../img/1-32.png") no-repeat;
@@ -334,21 +332,25 @@ body{
 }
 .promo__pic {
     position: absolute;
-    display: flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+
     width: 260px;
     height: 170px;
     bottom: 32px;
+    left: 50%;
+    margin-left: -130px;
 }
-.promo__pic img{
+.promo_pic_width{
+    display: flex;
+    align-items:center;
 }
-.promo__pic-width{
+.promo_pic_height{
+    text-align: center;
+}
+.promo_pic-width{
     width: 100%;
     height: auto;
  }
-.promo__pic-height{
+.promo_pic-height{
     width: auto;
     height: 100%;
 }
@@ -361,11 +363,12 @@ body{
     background-color: #163849;
 }
 .promo-slide .carousel-caption {
-    right: 14%;
+    right: auto;
     left: 22%;
     bottom: auto;
     text-align: left;
     padding-top: 26px;
+    width: 65%;
 }
 .promo-slide h1{
     font-size: 24px;
@@ -794,8 +797,8 @@ body{
 .social_block a{
     display: block;
     position: relative;
-    background-image: url("../img/skype_image.png");
-    background-repeat: no-repeat;
+    background: url("../img/skype_image.png") no-repeat;
+    background-size: 24px 24px;
     text-align: left;
     padding-left: 35px;
     padding-top: 3px;
@@ -804,12 +807,12 @@ body{
     vertical-align: middle;
 }
 .social_block .social_block-phone1{
-    background-image: url("../img/info_image.png");
-    background-repeat: no-repeat;
+    background: url("../img/info_image.png") no-repeat;
+    background-size: 24px 24px;
 }
 .social_block .social_block-phone2{
-    background-image: url("../img/phone_image.png");
-    background-repeat: no-repeat;
+    background: url("../img/phone_image.png") no-repeat;
+    background-size: 24px 24px;
 }
 /* ----------- /contacts ----------- */
 /* ----------- /benefits ----------- */
@@ -1117,17 +1120,18 @@ body{
 
     /* ----------- promo-slide ----------- */
     .promo__pic {
-        position: absolute;
-        right: 0;
-        width: 50%;
         height: 100%;
         bottom: 0;
+        right: 7%;
+        left: auto;
+        width: 33%;
     }
     .promo-slide .carousel-caption {
-        right: 44%;
-        left: 14.3%;
+        right: auto;
+        left: 13.3%;
         bottom: auto;
         padding-top: 32px;
+        width: 48%;
     }
     .promo-slide h1 {
         font-size: 60px;
@@ -1356,9 +1360,10 @@ body{
         margin: 0 auto 62px;
     }
     .promo-slide .carousel-caption {
-        right: 43%;
-        left: 16.9%;
-        padding-top: 57px;
+        right: auto;
+        left: 9.9%;
+        padding-top: 69px;
+        width: 37%;
     }
     .promo-slide p {
         letter-spacing: .4px;
@@ -1370,12 +1375,20 @@ body{
     }
     .promo-slide .carousel-control.right {
     }
+    /*.promo__pic {*/
+        /*width: 450px;*/
+        /*height: 214px;*/
+        /*bottom: 60px;*/
+        /*left: 50%;*/
+        /*margin-left: 6%;*/
+    /*}*/
+
     .promo__pic {
-        width: 450px;
-        height: 214px;
-        bottom: 60px;
-        left: 50%;
-        margin-left: 6%;
+        height: 100%;
+        bottom: 0;
+        right: 6%;
+        left: auto;
+        width: 44%;
     }
     /* ----------- /promo-slide ----------- */
 
@@ -1467,8 +1480,29 @@ only screen and (min-resolution: 192dpi) {
         background: url("../img/09-64.png") no-repeat 6px 0;
         background-size:32px 32px;
     }
+    .social_block a{
+        background: url("../img/skype_image-r.png") no-repeat center;
+        background-size: 24px 24px;
+    }
+    .social_block .social_block-phone1{
+        background: url("../img/info_image-r.png") no-repeat center;
+        background-size: 24px 24px;
+    }
+    .social_block .social_block-phone2 {
+        background: url("../img/phone_image-r.png") no-repeat center;
+        background-size: 24px 24px;
+    }
     .logo span {
-        background: url("../img/logo.png") no-repeat center;
+        background: url("../img/logo-r2.png") no-repeat center;
+        background-size: contain;
+    }
+    .benefits .click-title:before {
+        background: #26aed7 url("../img/accordion-icon01-r.png")no-repeat center;
+        background-size: 16px 10px;
+    }
+    .benefits .click-title_1:before {
+        background: #26aed7 url("../img/accordion-icon02-r.png")no-repeat center;
+        background-size: 10px 16px;
     }
 }
 @media  only screen and (-webkit-min-device-pixel-ratio: 3),
@@ -1514,5 +1548,21 @@ only screen and (min-resolution: 192dpi) {
     }
     .logo span {
         background: url("../img/logo.png") no-repeat center;
+    }
+    .social_block a{
+        background: url("../img/skype_image-r.png") no-repeat center;
+        background-size: 24px 24px;
+    }
+    .social_block .social_block-phone1{
+        background: url("../img/info_image-r.png") no-repeat center;
+        background-size: 24px 24px;
+    }
+    .social_block .social_block-phone2 {
+        background: url("../img/phone_image-r.png") no-repeat center;
+        background-size: 24px 24px;
+    }
+    .logo span {
+        background: url("../img/logo-r3.png") no-repeat center;
+        background-size: contain;
     }
 }

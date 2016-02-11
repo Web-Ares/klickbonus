@@ -6,9 +6,13 @@ $(function(){
            curHeight=$(this).height;
 
             if (curHeight > curWidth) {
-                $(this).addClass('promo__pic-height')
+                $(this).addClass('promo_pic-height');
+                $(this).parent('.promo__pic').addClass('promo_pic_height')
+
             }else{
-                $(this).addClass('promo__pic-width')
+                $(this).addClass('promo_pic-width');
+                $(this).parent('.promo__pic').addClass('promo_pic_width')
+
             }
 
     } );
