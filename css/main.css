@@ -168,42 +168,35 @@ body{
     color: #797979;
     padding: 5px 16px 0 47px;
     margin-bottom: 31px;
+    background-size: 32px 32px;
+    background-position: 6px 0;
 }
 .capabilities__item1{
-    background: url("../img/capabilities01.png") no-repeat 6px 0;
-    background-size: 31px 32px;
+    background: url("../img/1-32.png") no-repeat;
 }
 .capabilities__item2{
-    background: url("../img/capabilities02.png") no-repeat 6px 0;
-    background-size: 32px 31px;
+    background: url("../img/02-32.png") no-repeat;
 }
 .capabilities__item3{
-    background: url("../img/capabilities03.png") no-repeat 14px 0;
-    background-size: 22px 30px;
+    background: url("../img/03-32.png") no-repeat;
 }
 .capabilities__item4{
-    background: url("../img/capabilities04.png") no-repeat 6px 0;
-    background-size: 32px 32px;
+    background: url("../img/04-32.png") no-repeat;
 }
 .capabilities__item5{
-    background: url("../img/capabilities05.png") no-repeat 6px 0;
-    background-size: 31px 32px;
+    background: url("../img/05-32.png") no-repeat;
 }
 .capabilities__item6{
-    background: url("../img/capabilities06.png") no-repeat 15px 0;;
-    background-size: 19px 31px;
+    background: url("../img/06-32.png") no-repeat;
 }
 .capabilities__item7{
-    background: url("../img/capabilities07.png") no-repeat 6px 0;
-    background-size: 36px 30px;
+    background: url("../img/07-32.png") no-repeat;
 }
 .capabilities__item8{
-    background: url("../img/capabilities08.png") no-repeat 6px 0;
-    background-size: 32px 25px;
+    background: url("../img/08-32.png") no-repeat;
 }
 .capabilities__item9{
-    background: url("../img/capabilities09.png") no-repeat 6px 0;
-    background-size:31px 32px;
+    background: url("../img/09-32.png") no-repeat;
 }
 
 .capabilities__item span {
@@ -339,18 +332,29 @@ body{
     margin-bottom: 60px;
     height: 411px;
 }
+.promo__pic {
+    position: absolute;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width: 260px;
+    height: 170px;
+    bottom: 32px;
+}
+.promo__pic img{
+}
+.promo__pic-width{
+    width: 100%;
+    height: auto;
+ }
+.promo__pic-height{
+    width: auto;
+    height: 100%;
+}
 .promo-slide{
     height: 411px;
     margin-bottom: 34px;
-}
-.promo-slide .carousel-inner > .item > img {
-    top: auto;
-    left: 50%;
-    margin-left: -26%;
-    bottom: 36px;
-    height: 167px;
-    min-width: 0;
-    width: 200px;
 }
 .promo-slide .item {
     height: 411px;
@@ -1055,7 +1059,7 @@ body{
     /* ----------- reviews ----------- */
     .reviews-slide {
         height: 489px;
-        max-width: 1200px;
+        max-width: 1170px;
         margin: 0 auto 25px;
     }
     .reviews-slide .item {
@@ -1112,17 +1116,15 @@ body{
     /* ----------- /benefits ----------- */
 
     /* ----------- promo-slide ----------- */
-    .promo-slide .carousel-inner > .item > img {
-        top: auto;
-        left: 50%;
-        margin-left: 6%;
-        bottom: 49px;
-        height: 328px;
-        min-width: 100px;
-        width: 250px;
+    .promo__pic {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        bottom: 0;
     }
     .promo-slide .carousel-caption {
-        right: 43%;
+        right: 44%;
         left: 14.3%;
         bottom: auto;
         padding-top: 32px;
@@ -1361,17 +1363,19 @@ body{
     .promo-slide p {
         letter-spacing: .4px;
     }
-    .promo-slide .carousel-inner > .item > img {
-        width: 300px;
-        margin-left: 9.3%;
-        bottom: 29px;
-    }
     .promo-slide .carousel-indicators {
         margin-left: -30%;
     }
     .promo-slide .carousel-control{
     }
     .promo-slide .carousel-control.right {
+    }
+    .promo__pic {
+        width: 450px;
+        height: 214px;
+        bottom: 60px;
+        left: 50%;
+        margin-left: 6%;
     }
     /* ----------- /promo-slide ----------- */
 
@@ -1428,40 +1432,40 @@ only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi) {
     .capabilities__item1{
-        background: url("../img/capabilities011.png") no-repeat 6px 0;
-        background-size: 31px 32px;
+        background: url("../img/1-64.png") no-repeat 6px 0;
+        background-size:32px 32px;
     }
     .capabilities__item2{
-        background: url("../img/capabilities012.png") no-repeat 6px 0;
-        background-size: 32px 31px;
+        background: url("../img/02-64.png") no-repeat 6px 0;
+        background-size:32px 32px;
     }
     .capabilities__item3{
-        background: url("../img/capabilities013.png") no-repeat 14px 0;
-        background-size: 22px 30px;
+        background: url("../img/03-64.png") no-repeat 14px 0;
+        background-size:32px 32px;
     }
     .capabilities__item4{
-        background: url("../img/capabilities014.png") no-repeat 6px 0;
-        background-size: 32px 32px;
+        background: url("../img/04-64.png") no-repeat 6px 0;
+        background-size:32px 32px;
     }
     .capabilities__item5{
-        background: url("../img/capabilities015.png") no-repeat 6px 0;
-        background-size: 31px 32px;
+        background: url("../img/05-64.png") no-repeat 6px 0;
+        background-size:32px 32px;
     }
     .capabilities__item6{
-        background: url("../img/capabilities016.png") no-repeat 15px 0;;
-        background-size: 19px 31px;
+        background: url("../img/06-64.png") no-repeat 15px 0;;
+        background-size:32px 32px;
     }
     .capabilities__item7{
-        background: url("../img/capabilities017.png") no-repeat 6px 0;
-        background-size: 36px 30px;
+        background: url("../img/07-64.png") no-repeat 6px 0;
+        background-size:32px 32px;
     }
     .capabilities__item8{
-        background: url("../img/capabilities018.png") no-repeat 6px 0;
-        background-size: 32px 25px;
+        background: url("../img/08-64.png") no-repeat 6px 0;
+        background-size:32px 32px;
     }
     .capabilities__item9{
-        background: url("../img/capabilities019.png") no-repeat 6px 0;
-        background-size:31px 32px;
+        background: url("../img/09-64.png") no-repeat 6px 0;
+        background-size:32px 32px;
     }
     .logo span {
         background: url("../img/logo.png") no-repeat center;
@@ -1473,40 +1477,40 @@ only screen and (        min-device-pixel-ratio: 3),
 only screen and (min-resolution: 192dpi) {
 
     .capabilities__item1{
-        background: url("../img/capabilities111.png") no-repeat 6px 0;
+        background: url("../img/1-96.png") no-repeat 6px 0;
         background-size: 31px 32px;
     }
     .capabilities__item2{
-        background: url("../img/capabilities112.png") no-repeat 6px 0;
-        background-size: 32px 31px;
+        background: url("../img/02-96.png") no-repeat 6px 0;
+        background-size:32px 32px;
     }
     .capabilities__item3{
-        background: url("../img/capabilities113.png") no-repeat 14px 0;
-        background-size: 22px 30px;
+        background: url("../img/03-96.png") no-repeat 6px 0;
+        background-size:32px 32px;
     }
     .capabilities__item4{
-        background: url("../img/capabilities114.png") no-repeat 6px 0;
-        background-size: 32px 32px;
+        background: url("../img/04-96.png") no-repeat 6px 0;
+        background-size:32px 32px;
     }
     .capabilities__item5{
-        background: url("../img/capabilities115.png") no-repeat 6px 0;
-        background-size: 31px 32px;
+        background: url("../img/05-96.png") no-repeat 6px 0;
+        background-size:32px 32px;
     }
     .capabilities__item6{
-        background: url("../img/capabilities116.png") no-repeat 15px 0;;
-        background-size: 19px 31px;
+        background: url("../img/06-96.png") no-repeat 6px 0;
+        background-size:32px 32px;
     }
     .capabilities__item7{
-        background: url("../img/capabilities117.png") no-repeat 6px 0;
-        background-size: 36px 30px;
+        background: url("../img/07-96.png") no-repeat 6px 0;
+        background-size:32px 32px;
     }
     .capabilities__item8{
-        background: url("../img/capabilities118.png") no-repeat 6px 0;
-        background-size: 32px 25px;
+        background: url("../img/08-96.png") no-repeat 6px 0;
+        background-size:32px 32px;
     }
     .capabilities__item9{
-        background: url("../img/capabilities119.png") no-repeat 6px 0;
-        background-size:31px 32px;
+        background: url("../img/09-96.png") no-repeat 6px 0;
+        background-size:32px 32px;
     }
     .logo span {
         background: url("../img/logo.png") no-repeat center;

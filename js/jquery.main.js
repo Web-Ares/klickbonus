@@ -1,12 +1,34 @@
 $(function(){
+
+    $.each( $('.promo__pic img'), function(){
+       var
+           curWidth=$(this).width,
+           curHeight=$(this).height;
+
+            if (curHeight > curWidth) {
+                $(this).addClass('promo__pic-height')
+            }else{
+                $(this).addClass('promo__pic-width')
+            }
+
+    } );
+
     if (window.devicePixelRatio > 1) {
-        $('.item img').each(function () {
+        $('img').each(function () {
             this.src = this.getAttribute('data-full');
         });
     }
     $('.click-title').click(function () {
-        $('.click-title').removeClass('click-title_1');
-        $(this).addClass('click-title_1')
+
+        if($(this).hasClass('click-title_1')){
+
+            $('.click-title').removeClass('click-title_1');
+
+        }else{
+            $('.click-title').removeClass('click-title_1');
+            $(this).addClass('click-title_1')
+        }
+
     });
 
     $('.panel').click(function () {
