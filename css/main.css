@@ -1504,6 +1504,12 @@ only screen and (min-resolution: 192dpi) {
         background: #26aed7 url("../img/accordion-icon02-r.png")no-repeat center;
         background-size: 10px 16px;
     }
+    .tabs__item-list li:before {
+        width: 15px;
+        height: 13px;
+        background: url("../img/cheack_arrow-r.png") no-repeat;
+        background-size: contain;
+    }
 }
 @media  only screen and (-webkit-min-device-pixel-ratio: 3),
 only screen and (   min--moz-device-pixel-ratio: 3),
